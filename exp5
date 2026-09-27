@@ -1,0 +1,18 @@
+import pandas as pd
+data_england={'name':['kane','sterling','saka','marguire'],'age':[27,26,19,28]}
+data_italy={'name':['immobile','insigne','chielline','chiesa'],'age':[31,30,36,23]}
+df_england=pd.DataFrame(data_england)
+df_italy=pd.DataFrame(data_italy)
+df.england
+df.italy
+frames=[df_england,df_italy]
+both_teams=pd.concat(frames)
+both_teams
+both_teams[both_teams["age"]>=30]
+both_teams[both_teams["name"].str.startswith('s')]
+club=['tottenham','man city','arsenel','man utd']
+df_england['associated clubs']=club
+df_england
+frames=[df_england,df_italy]
+both_teams=pd.concat(frames)
+both_teams
